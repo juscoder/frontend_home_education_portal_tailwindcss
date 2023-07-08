@@ -1,219 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-        <title>Home Education Portal</title>
-    </head>
 
-    <body class="bg-gray-100">
-        <!-- Header -->
-        <header class="bg-indigo-500 py-4">
-            <div class="container mx-auto px-4">
-                <h1 class="text-white text-2xl font-bold">Home Education Portal</h1>
-            </div>
-        </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Home Education Portal</title>
+</head>
 
-        <!-- Main Content -->
-        <main class="container mx-auto px-4 py-8">
-            <h2 class="text-2xl font-bold mb-4">Categorías</h2>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-indigo-500 py-4">
+    <div class="container mx-auto px-4">
+      <h1 class="text-white text-2xl font-bold">Home Education Portal</h1>
+    </div>
+  </header>
 
-            <!-- Categories -->
-            <div class="flex justify-center mb-8">
-                <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mr-4" data-category="category1">Categoría 1</button>
-                <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mr-4" data-category="category2">Categoría 2</button>
-                <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mr-4" data-category="category3">Categoría 3</button>
-                <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mr-4" data-category="category4">Categoría 4</button>
-                <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg" data-category="category5">Categoría 5</button>
-            </div>
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4">Categorías</h2>
 
-            <!-- Category Content -->
-            <div id="category-content">
-                <!-- Category 1 -->
-                <div id="category1" class="hidden">
-                    <h3 class="text-2xl font-bold mb-4">Categoría 1</h3>
+    <!-- Categories -->
+    <div class="flex justify-center mb-8">
+      <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mr-4"
+        data-category="category1">Categoría 1</button>
+      <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mr-4"
+        data-category="category2">Categoría 2</button>
+      <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mr-4"
+        data-category="category3">Categoría 3</button>
+      <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg mr-4"
+        data-category="category4">Categoría 4</button>
+      <button class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg"
+        data-category="category5">Categoría 5</button>
+    </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        <!-- Card 1 -->
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
-                            <a href="https://ed.team/cursos/programacion">
-                                <img class="rounded-t-lg" src="https://ed.team/_next/image?url=https%3A%2F%2Fedteam-media.s3.amazonaws.com%2Fcourses%2Fbig%2Fae3f0782-49a1-498f-9136-8b8283a2cc23.png&w=640&q=75" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Curso: Programación desde cero (2023)</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">El mejor curso de programación en español regresa renovado.</p>
-                                <a
-                                    href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                >
-                                    Ir a Drive
-                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+    <!-- Category Content -->
+    <div id="category-content"></div>
+  </main>
 
-                        <!-- Card 2 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card2.jpg" alt="Card 2" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 2</h4>
-                                <p class="text-gray-700">Descripción de la Card 2</p>
-                            </div>
-                        </div>
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-600">© 2023 Home Education Portal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-                        <!-- Card 3 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card3.jpg" alt="Card 3" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 3</h4>
-                                <p class="text-gray-700">Descripción de la Card 3</p>
-                            </div>
-                        </div>
+  <script src="app.js"></script>
+</body>
 
-                        <!-- Card 4 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card4.jpg" alt="Card 4" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 4</h4>
-                                <p class="text-gray-700">Descripción de la Card 4</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card5.jpg" alt="Card 5" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 5</h4>
-                                <p class="text-gray-700">Descripción de la Card 5</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 6 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card6.jpg" alt="Card 6" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 6</h4>
-                                <p class="text-gray-700">Descripción de la Card 6</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category Content 2 -->
-                <!-- Category 2 -->
-                <div id="category2" class="hidden">
-                    <h3 class="text-2xl font-bold mb-4">Categoría 2</h3>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        <!-- Card 1 -->
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
-                            <a href="https://ed.team/cursos/programacion">
-                                <img class="rounded-t-lg" src="https://ed.team/_next/image?url=https%3A%2F%2Fedteam-media.s3.amazonaws.com%2Fcourses%2Fbig%2Fa7e195d6-4d6d-4563-bcd6-1bddb6d69a48.png&w=640&q=75" alt="" />
-                            </a>
-                            <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Taller: Test Driven Development (TDD)</h5>
-                                </a>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Aprende a realizar el testing y el benchmarking de tus aplicaciones con Go.</p>
-                                <a
-                                    href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                >
-                                    Ir a Drive
-                                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Card 8 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card8.jpg" alt="Card 8" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 8</h4>
-                                <p class="text-gray-700">Descripción de la Card 8</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 9 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card9.jpg" alt="Card 9" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 9</h4>
-                                <p class="text-gray-700">Descripción de la Card 9</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 10 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card10.jpg" alt="Card 10" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 10</h4>
-                                <p class="text-gray-700">Descripción de la Card 10</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 11 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card11.jpg" alt="Card 11" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 11</h4>
-                                <p class="text-gray-700">Descripción de la Card 11</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 12 -->
-                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="card12.jpg" alt="Card 12" class="w-full h-32 object-cover" />
-                            <div class="p-4">
-                                <h4 class="text-lg font-bold mb-2">Card 12</h4>
-                                <p class="text-gray-700">Descripción de la Card 12</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Other categories... -->
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="bg-gray-200 py-4">
-            <div class="container mx-auto px-4 text-center">
-                <p class="text-gray-600">© 2023 Home Education Portal. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-
-        <script>
-            const categoryButtons = document.querySelectorAll("[data-category]");
-            const categoryContent = document.getElementById("category-content");
-
-            categoryButtons.forEach((button) => {
-                button.addEventListener("click", () => {
-                    const category = button.dataset.category;
-                    showCategory(category);
-                });
-            });
-
-            function showCategory(category) {
-                const categories = categoryContent.children;
-
-                for (let i = 0; i < categories.length; i++) {
-                    const categoryElement = categories[i];
-
-                    if (categoryElement.id === category) {
-                        categoryElement.classList.remove("hidden");
-                    } else {
-                        categoryElement.classList.add("hidden");
-                    }
-                }
-            }
-        </script>
-    </body>
 </html>
